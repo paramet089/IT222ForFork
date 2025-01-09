@@ -8,8 +8,8 @@
     while ($dbarr = mysqli_fetch_array($result)){
         $pgcount = $dbarr["countnum"];
     }
-    $pgcount = $pgcount + 1;
-    $pgcount = "00009" . $pgcount;
+    $pgcount = $pgcount + 2;
+    $pgcount = "00000" . $pgcount;
     $pgcount = substr($pgcount, -6);
     echo "$pgcount";
 
